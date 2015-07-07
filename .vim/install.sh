@@ -3,6 +3,6 @@
 set +x
 
 cd ~/.vim
-cat vimrc.vim > ~/.vimrc
+ln -s `pwd`/vimrc.vim ~/.vimrc
 
 echo "Vim configuration installed successfully!"

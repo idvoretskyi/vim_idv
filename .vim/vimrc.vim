@@ -29,4 +29,16 @@ set autoindent    " align the new line indent with the previous line
 autocmd BufWritePost *.py call Pyflakes()
 autocmd BufWritePost *.py call Pep8()
 
-
+" Color scheme
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+let g:rehash256 = 1
+set t_Co=256
+" colorscheme desert256
+colorscheme hybrid
+highlight Comment cterm=bold
+"
+" " Nerdtree shortcut
+ map <F3> :NERDTreeTabsToggle<CR>
+"
