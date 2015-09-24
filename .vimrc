@@ -16,6 +16,9 @@ source ~/.vim/plugins.vim
 " source file to store keybindings
 source ~/.vim/keybindings.vim
 
+" source file to store colorscheme
+source ~/.vim/colorscheme.vim
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -39,17 +42,6 @@ let g:PyFlakeDefaultComplexity=10
 let g:PyFlakeAggressive = 3
 let g:PyFlakeRangeCommand = 'Q'
 let g:PyFlakeDefaultComplexity=10
-
-" Color scheme
-syntax enable
-set background=dark
-let g:solarized_termcolors=256
-let g:rehash256 = 1
-set t_Co=256
-" colorscheme desert256
-" colorscheme hybrid
-colorscheme solarized
-highlight Comment cterm=bold
 
 "====== NerdTree ==========="
 " to open a NERDTree automatically when vim starts up
