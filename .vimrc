@@ -2,6 +2,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" source file to store keybindings
+source ~/.vim/keybindings.vim
+
 "======= Vundle settings ======="
 "set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -12,12 +15,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " source file to store bundles
 source ~/.vim/plugins.vim
-
-" source file to store keybindings
-source ~/.vim/keybindings.vim
-
-" source file to store colorscheme
-source ~/.vim/colorscheme.vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,4 +54,16 @@ let NERDTreeShowHidden=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" Color scheme
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+let g:rehash256 = 1
+set t_Co=256
+" colorscheme desert256
+" colorscheme hybrid
+colorscheme solarized
+" colorscheme molokai
+highlight Comment cterm=bold
 
