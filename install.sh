@@ -1,10 +1,6 @@
 #!/bin/bash
 
-set +x
-
-cat vim/vimrc.vim > ~/.vimrc
-
-mkdir ~/.vim/
+cd ~/.vim_runtime
 
 cp -r vim/plugins.vim ~/.vim/plugins.vim
 
