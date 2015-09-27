@@ -6,8 +6,10 @@ An awesome vim configuration that is used by me in everyday life.
 
 To install it easily, please run:
 
-`git clone git@github.com:idvoretskyi/vimrc.git ~/vimrc && bash
+`git clone https://github.com/idvoretskyi/vimrc.git ~/vimrc && bash
 ~/vimrc/install.sh && vim +PluginInstall +qall`
+
+_Please, ignore errors if some you'll notice any and simply press Enter_
 
 The full list of plugins one may find in `'~/.vim/plugins.vim'` file. To add any
 new plugin, simply add it to that file.
