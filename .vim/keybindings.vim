@@ -27,6 +27,7 @@ nnoremap <leader>Td :set ft=django<CR>
 
 " Run Pyflakes for current file
 nmap <F7> :PyFlake<CR> 
+nmap <C-F7> :PyFlakeAuto<CR> 
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
