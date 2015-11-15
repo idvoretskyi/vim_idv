@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git clone https://github.com/idvoretskyi/awesome_vimrc.git ~/vimrc
+
 cd ~/vimrc
 
 cat .vimrc > ~/.vimrc
