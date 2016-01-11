@@ -1,4 +1,4 @@
-"======= General settings ======"
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -44,8 +44,8 @@ let g:PyFlakeDefaultComplexity=10
 " to open a NERDTree automatically when vim starts up
 "autocmd vimenter * NERDTree "
 " to open a NERDTree automatically when vim starts up if no files were specified
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "
 "Show hidden files
 let NERDTreeShowHidden=1
@@ -54,13 +54,4 @@ let NERDTreeShowHidden=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-
-" Color scheme
-syntax enable
-set background=dark
-let g:solarized_termcolors=256
-let g:rehash256 = 1
-set t_Co=256
-colorscheme solarized
-highlight Comment cterm=bold
 
