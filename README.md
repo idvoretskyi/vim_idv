@@ -17,7 +17,7 @@ new plugin, simply add it to that file.
 Example: I'd like to add the NERD tree plugin.
 I have to simply run:
 
-`echo "Plugin 'scrooloose/nerdtree' >> ~/.vim/plugins.vim && vim +PluginInstall +qall` for that.
+`echo "Plugin 'scrooloose/nerdtree' >> ~/.vim/plugins.vim && vim +PluginInstall +qall`.
 
 Detailed information about Plugin installation (using Vundle tool) one may find here -
 https://github.com/VundleVim/Vundle.vim
