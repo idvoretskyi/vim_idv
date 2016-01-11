@@ -1,4 +1,6 @@
 " test comment
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'JarrodCTaylor/vim-shell-executor'
 Plugin 'andviro/flake8-vim'
 Plugin "MarcWeber/vim-addon-mw-utils"
 Plugin "tomtom/tlib_vim"
