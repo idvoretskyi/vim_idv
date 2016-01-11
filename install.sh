@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 # Cloning the repo
 git clone https://github.com/idvoretskyi/vim_idv.git ~/vim_idv/
