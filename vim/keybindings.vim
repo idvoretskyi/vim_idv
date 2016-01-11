@@ -1,9 +1,9 @@
-"=====================================================
+
 " User hotkeys
 "=====================================================
 "
 " " Nerdtree shortcut
- map <F3> :NERDTreeTabsToggle<CR>
+map <C-f> :NERDTreeTabsToggle<CR>
 "
 " ConqueTerm
 " bash on F5
