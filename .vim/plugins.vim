@@ -1,3 +1,4 @@
+" test comment
 Plugin 'andviro/flake8-vim'
 Plugin "MarcWeber/vim-addon-mw-utils"
 Plugin "tomtom/tlib_vim"
@@ -17,7 +18,6 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'sickill/vim-monokai'
-Plugin 'corporation'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
