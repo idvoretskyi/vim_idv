@@ -1,6 +1,6 @@
 ## About 
 
-An awesome vim configuration that is used by me in everyday life.
+An awesome vim configuration that I'm using in everyday life.
 
 ## Installation
 
