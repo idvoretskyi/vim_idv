@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Cloning the repo
-git clone https://github.com/idvoretskyi/idv_vim.git ~/vimrc
+git clone https://github.com/idvoretskyi/vim_idv.git ~/vimrc
 
 # Installing awesome VIM distribution
 cd ~/vimrc

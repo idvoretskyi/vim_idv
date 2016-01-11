@@ -6,7 +6,7 @@ An awesome vim configuration that I use every day.
 
 To install it easily, please run:
 
-`git clone https://github.com/idvoretskyi/idv_vim.git ~/vimrc && bash
+`git clone https://github.com/idvoretskyi/vim_idv.git ~/vimrc && bash
 ~/vimrc/install.sh && vim +PluginInstall +qall`
 
 _Please, ignore errors if you'll notice any and simply press Enter_
