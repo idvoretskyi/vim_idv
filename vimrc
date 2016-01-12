@@ -1,5 +1,5 @@
-
 set nocompatible              " be iMproved, required
+set number                    " add numbers to the beginning of the line
 filetype off                  " required
 
 " source file to store keybindings
