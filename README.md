@@ -6,14 +6,13 @@ An awesome vim configuration that I use every day.
 
 To install it easily, please run:
 
-`curl -sS
-https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/install.sh | bash`
+`curl -sS https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/install.sh | bash`
 
 ## Updating existing installation
 
 Simply run the following command:
 
-`https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/update.sh | bash`
+`curl -sS https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/update.sh | bash`
 
 ## Plugin Management
 The full list of plugins one may find in `'~/.vim/plugins.vim'` file. To add any
@@ -39,13 +38,25 @@ In my vim distribution the following Plugins are used:
 * [andviro/flake8-vim](https://github.com/nvie/vim-flake8): Flake8 plugin for
   Vim
 
-* [scrooloose/nerdtree]
-* [klen/python-mode]
-* [davidhalter/jedi-vim]
-* [vim-scripts/nginx.vim]
-* [toupeira/vim-desertink]
-* [tomasr/molokai]
-* [tpope/vim-eunuch]
+* [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git): A tree
+  explorer plugin for vim.
+
+* [klen/python-mode](https://github.com/klen/python-mode): Vim python-mode.
+  PyLint, Rope, Pydoc, breakpoints from box.
+
+* [davidhalter/jedi-vim](https://github.com/davidhalter/jedi-vim): Using the
+  jedi autocompletion library for VIM.
+
+* [vim-scripts/nginx.vim](http://www.vim.org/scripts/script.php?script_id=1886):
+  Highlights configuration files for nginx
+* [toupeira/vim-desertink](https://github.com/toupeira/vim-desertink): A Vim
+  colorscheme based on desert.
+
+* [tomasr/molokai](https://github.com/tomasr/molokai): Molokai color scheme for
+  Vim
+
+* [tpope/vim-eunuch](https://github.com/tpope/vim-eunuch): eunuch.vim: helpers
+  for UNIX
 * [tpope/vim-fugitive]
 * [rosenfeld/conque-term]
 * [jistr/vim-nerdtree-tabs]
