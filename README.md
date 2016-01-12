@@ -12,7 +12,7 @@ To install it easily, please run:
 
 Simply run the following command:
 
-`curl -sS https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/update.sh | bash`
+`bash ~/vim_idv/update.sh`
 
 ## Plugin Management
 The full list of plugins one may find in `'~/.vim/plugins.vim'` file. To add any
