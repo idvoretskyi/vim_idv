@@ -55,23 +55,47 @@ In my vim distribution the following Plugins are used:
 * [tomasr/molokai](https://github.com/tomasr/molokai): Molokai color scheme for
   Vim
 
-* [tpope/vim-eunuch](https://github.com/tpope/vim-eunuch): eunuch.vim: helpers
+* [tpope/vim-eunuch](https://github.com/tpope/vim-eunuch): helpers
   for UNIX
-* [tpope/vim-fugitive]
-* [rosenfeld/conque-term]
-* [jistr/vim-nerdtree-tabs]
-* [scrooloose/syntastic]
-* [majutsushi/tagbar]
-* [sickill/vim-monokai]
-* [w0ng/vim-hybrid]
-* [scrooloose/nerdcommenter]
-* [bling/vim-airline]
-* [Conque-Shell]
-* [Xuyuanp/nerdtree-git-plugin]
-* [rodjek/vim-puppet]
-* [vim-ruby/vim-ruby]
-* [godlygeek/tabular]
-* [altercation/vim-colors-solarized]
-* [fatih/vim-go]
-* [vim-jp/vim-go-extra]
-* [rjohnsondev/vim-compiler-go]
+* [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive): a Git wrapper
+* [vim-scripts/conque-term](https://github.com/vim-scripts/Conque-Shell): Run
+  interactive commands inside a Vim buffer
+* [jistr/vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs):
+  NERDTree and tabs together in Vim, painlessly
+
+* [scrooloose/syntastic](https://github.com/scrooloose/syntastic): Syntax
+  checking hacks for vim
+
+* [majutsushi/tagbar](https://github.com/majutsushi/tagbar): Vim plugin that
+  displays tags in a window, ordered by scope
+* [sickill/vim-monokai](https://github.com/sickill/vim-monokai): Monokai color
+  scheme for Vim 
+* [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid): A dark color scheme
+  for Vim & gVim
+
+* [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter): Vim
+  plugin for intensely orgasmic commenting
+
+* [bling/vim-airline](https://github.com/bling/vim-airline): lean & mean
+  status/tabline for vim that's light as air
+
+* [Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin):
+  A plugin of NERDTree showing git status
+
+* [rodjek/vim-puppet](https://github.com/rodjek/vim-puppet): Puppet niceties
+  for your Vim setup
+
+* [vim-ruby/vim-ruby](https://github.com/vim-ruby/vim-ruby): Vim/Ruby
+  Configuration Files
+
+* [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized):
+  precision colorscheme for the vim text editor
+* [fatih/vim-go](https://github.com/fatih/vim-go): Go development plugin for
+  Vim
+
+* [vim-jp/vim-go-extra](https://github.com/vim-jp/vim-go-extra): Extra plugin
+  for golang
+
+* [rjohnsondev/vim-compiler-go](https://github.com/rjohnsondev/vim-compiler-go):
+  Vim compiler plugin for Go (golang)
+
