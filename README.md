@@ -5,7 +5,7 @@ An awesome vim configuration that I use every day.
 ## Screenshot
 
 You may see VIM with opened NERDTree tab, ConqueTerm with Bash and Airline:
-[Screenshot](https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/vim_idv.png)
+![Screenshot](https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/vim_idv.png)
 
 ## Installation
 
