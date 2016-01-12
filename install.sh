@@ -7,7 +7,7 @@ if [ -e "$VIMDIR" ]; then
     cd $VIMDIR && \
     git pull && \
     vim +PluginClean +qall && \
-    vim +PluginUpdate +qall && \
+    vim +PluginUpdate +qall &&
 else
     git clone https://github.com/idvoretskyi/vim_idv.git $VIMDIR
 fi
