@@ -4,10 +4,8 @@ VIMDIR="~/vim_idv"
 
 # Cloning the repo
 if [ -e "$VIMDIR" ]; then
-    cd $VIMDIR && \
-    git pull && \
-    vim +PluginClean +qall && \
-    vim +PluginUpdate +qall
+    echo "This VIM configuration has been already installed. Please, run the
+    update script for updating it"
 else
     git clone https://github.com/idvoretskyi/vim_idv.git $VIMDIR
 fi
@@ -23,4 +21,4 @@ cd $VIMDIR/vim
 git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
 vim +PluginInstall +qall
 
-echo "Vim configuration installed successfully!"
+echo "VIM configuration installed successfully!"
