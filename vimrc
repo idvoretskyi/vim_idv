@@ -55,3 +55,13 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
+" Colorscheme settings
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+let g:rehash256 = 1
+set t_Co=256
+colorscheme solarized
+highlight Comment cterm=bold
+
+
