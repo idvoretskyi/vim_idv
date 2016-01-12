@@ -3,11 +3,18 @@
 VIMDIR="~/vim_idv"
 
 # Cloning the repo
-git clone https://github.com/idvoretskyi/vim_idv.git $VIMDIR 
+if [ -e "$VIMDIR" ]; then
+    rm -rf $VIMDIR
+fi
+
+git clone https://github.com/idvoretskyi/vim_idv.git $VIMDIR
 
 # Installing awesome VIM distribution
-ln -s $VIMDIR/vimrc ~/.vimrc
-ln -s $VIMDIR/vim ~/.vim
+if [ -e ~/.vim* ];then
+    rm -rf ~/.vim*
+fi
+
+ln -s $VIMDIR/vimrc ~/.vimrc && ln -s $VIMDIR/vim ~/.vim
 
 cd $VIMDIR/vim
 git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
