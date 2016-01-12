@@ -7,7 +7,8 @@ git clone https://github.com/idvoretskyi/vim_idv.git ~/vim_idv/
 ln -s ~/vim_idv/vimrc ~/.vimrc
 ln -s ~/vim_idv/vim ~/.vim
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+cd ~/.vim/
+git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
 vim +PluginInstall +qall
 
 echo "Vim configuration installed successfully!"
