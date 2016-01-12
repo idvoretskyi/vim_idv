@@ -1,6 +1,6 @@
 ## About 
 
-An awesome vim configuration that I use every day.
+An awesome vim configuration. My awesome.
 
 ## Screenshot
 
