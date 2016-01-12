@@ -4,10 +4,13 @@ VIMDIR="~/vim_idv"
 
 # Cloning the repo
 if [ -e "$VIMDIR" ]; then
-    rm -rf $VIMDIR
+    cd $VIMDIR && \
+    git pull && \
+    vim +PluginClean +qall && \
+    vim +PluginUpdate +qall && \
+else
+    git clone https://github.com/idvoretskyi/vim_idv.git $VIMDIR
 fi
-
-git clone https://github.com/idvoretskyi/vim_idv.git $VIMDIR
 
 # Installing awesome VIM distribution
 if [ -e ~/.vim* ];then
