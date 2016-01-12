@@ -31,17 +31,30 @@
         <h2>
 <a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h2>
 
-<p>An awesome vim configuration that I use every day.</p>
+<p>An awesome vim configuration. My awesome.</p>
+
+<h2>
+<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshot</h2>
+
+<p>You may see VIM with opened NERDTree tab, ConqueTerm with Bash and Airline:
+<img src="https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/vim_idv.png" alt="Screenshot"></p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>To install it easily, please run:</p>
 
-<p><code>git clone https://github.com/idvoretskyi/vim_idv.git ~/vimrc &amp;&amp; bash
-~/vimrc/install.sh &amp;&amp; vim +PluginInstall +qall</code></p>
+<p><code>curl -sS https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/install.sh | bash</code></p>
 
-<p><em>Please, ignore errors if you'll notice any and simply press Enter</em></p>
+<h2>
+<a id="updating-existing-installation" class="anchor" href="#updating-existing-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updating existing installation</h2>
+
+<p>Simply run the following command:</p>
+
+<p><code>curl -sS https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/update.sh | bash</code></p>
+
+<h2>
+<a id="plugin-management" class="anchor" href="#plugin-management" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugin Management</h2>
 
 <p>The full list of plugins one may find in <code>'~/.vim/plugins.vim'</code> file. To add any
 new plugin, simply add it to that file.</p>
@@ -51,8 +64,72 @@ I have to simply run:</p>
 
 <p><code>echo "Plugin 'scrooloose/nerdtree' &gt;&gt; ~/.vim/plugins.vim &amp;&amp; vim +PluginInstall +qall</code>.</p>
 
-<p>Detailed information about Plugin installation (using Vundle tool) one may find here -
-<a href="https://github.com/VundleVim/Vundle.vim">https://github.com/VundleVim/Vundle.vim</a></p>
+<p>Detailed information about Plugin installation one may find in <a href="https://github.com/VundleVim/Vundle.vim">Vundle.vim</a> documentation.</p>
+
+<h1>
+<a id="bundled-plugins" class="anchor" href="#bundled-plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bundled plugins</h1>
+
+<p>In my vim distribution the following Plugins are used:</p>
+
+<ul>
+<li><p><a href="https://github.com/christoomey/vim-tmux-navigator">christoomey/vim-tmux-navigator</a>:
+Seamless navigation between tmux panes and vim splits</p></li>
+<li><p><a href="https://github.com/JarrodCTaylor/vim-shell-executor">JarrodCTaylor/vim-shell-executor</a>:
+Execute vim buffer in the shell and view output in split pane</p></li>
+<li><p><a href="https://github.com/nvie/vim-flake8">andviro/flake8-vim</a>: Flake8 plugin for
+Vim</p></li>
+<li><p><a href="https://github.com/scrooloose/nerdtree.git">scrooloose/nerdtree</a>: A tree
+explorer plugin for vim.</p></li>
+<li><p><a href="https://github.com/klen/python-mode">klen/python-mode</a>: Vim python-mode.
+PyLint, Rope, Pydoc, breakpoints from box.</p></li>
+<li><p><a href="https://github.com/davidhalter/jedi-vim">davidhalter/jedi-vim</a>: Using the
+jedi autocompletion library for VIM.</p></li>
+<li><p><a href="http://www.vim.org/scripts/script.php?script_id=1886">vim-scripts/nginx.vim</a>:
+Highlights configuration files for nginx</p></li>
+<li><p><a href="https://github.com/tpope/vim-eunuch">tpope/vim-eunuch</a>: helpers
+for UNIX</p></li>
+<li><p><a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a>: a Git wrapper</p></li>
+<li><p><a href="https://github.com/vim-scripts/Conque-Shell">vim-scripts/conque-term</a>: Run
+interactive commands inside a Vim buffer</p></li>
+<li><p><a href="https://github.com/jistr/vim-nerdtree-tabs">jistr/vim-nerdtree-tabs</a>:
+NERDTree and tabs together in Vim, painlessly</p></li>
+<li><p><a href="https://github.com/scrooloose/syntastic">scrooloose/syntastic</a>: Syntax
+checking hacks for vim</p></li>
+<li><p><a href="https://github.com/majutsushi/tagbar">majutsushi/tagbar</a>: Vim plugin that
+displays tags in a window, ordered by scope</p></li>
+<li><p><a href="https://github.com/scrooloose/nerdcommenter">scrooloose/nerdcommenter</a>: Vim
+plugin for intensely orgasmic commenting</p></li>
+<li><p><a href="https://github.com/bling/vim-airline">bling/vim-airline</a>: lean &amp; mean
+status/tabline for vim that's light as air</p></li>
+<li><p><a href="https://github.com/Xuyuanp/nerdtree-git-plugin">Xuyuanp/nerdtree-git-plugin</a>:
+A plugin of NERDTree showing git status</p></li>
+<li><p><a href="https://github.com/rodjek/vim-puppet">rodjek/vim-puppet</a>: Puppet niceties
+for your Vim setup</p></li>
+<li><p><a href="https://github.com/vim-ruby/vim-ruby">vim-ruby/vim-ruby</a>: Vim/Ruby
+Configuration Files</p></li>
+<li><p><a href="https://github.com/fatih/vim-go">fatih/vim-go</a>: Go development plugin for
+Vim</p></li>
+<li><p><a href="https://github.com/vim-jp/vim-go-extra">vim-jp/vim-go-extra</a>: Extra plugin
+for golang</p></li>
+<li><p><a href="https://github.com/rjohnsondev/vim-compiler-go">rjohnsondev/vim-compiler-go</a>:
+Vim compiler plugin for Go (golang)</p></li>
+</ul>
+
+<h1>
+<a id="bundled-colorschemes" class="anchor" href="#bundled-colorschemes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bundled colorschemes</h1>
+
+<ul>
+<li><p><a href="https://github.com/toupeira/vim-desertink">toupeira/vim-desertink</a>: A Vim
+colorscheme based on desert.</p></li>
+<li><p><a href="https://github.com/tomasr/molokai">tomasr/molokai</a>: Molokai color scheme for
+Vim</p></li>
+<li><p><a href="https://github.com/sickill/vim-monokai">sickill/vim-monokai</a>: Monokai color
+scheme for Vim </p></li>
+<li><p><a href="https://github.com/w0ng/vim-hybrid">w0ng/vim-hybrid</a>: A dark color scheme
+for Vim &amp; gVim</p></li>
+<li><p><a href="https://github.com/altercation/vim-colors-solarized">altercation/vim-colors-solarized</a>:
+precision colorscheme for the vim text editor</p></li>
+</ul>
       </section>
     </div>
 
