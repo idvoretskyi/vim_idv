@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VIMDIR="~/vim_idv/"
+VIMDIR="~/vim_idv"
 
 # Cloning the repo
 git clone https://github.com/idvoretskyi/vim_idv.git $VIMDIR 
