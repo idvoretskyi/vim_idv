@@ -49,17 +49,15 @@ In my vim distribution the following Plugins are used:
 
 * [vim-scripts/nginx.vim](http://www.vim.org/scripts/script.php?script_id=1886):
   Highlights configuration files for nginx
-* [toupeira/vim-desertink](https://github.com/toupeira/vim-desertink): A Vim
-  colorscheme based on desert.
-
-* [tomasr/molokai](https://github.com/tomasr/molokai): Molokai color scheme for
-  Vim
 
 * [tpope/vim-eunuch](https://github.com/tpope/vim-eunuch): helpers
   for UNIX
+
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive): a Git wrapper
+
 * [vim-scripts/conque-term](https://github.com/vim-scripts/Conque-Shell): Run
   interactive commands inside a Vim buffer
+
 * [jistr/vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs):
   NERDTree and tabs together in Vim, painlessly
 
@@ -68,10 +66,6 @@ In my vim distribution the following Plugins are used:
 
 * [majutsushi/tagbar](https://github.com/majutsushi/tagbar): Vim plugin that
   displays tags in a window, ordered by scope
-* [sickill/vim-monokai](https://github.com/sickill/vim-monokai): Monokai color
-  scheme for Vim 
-* [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid): A dark color scheme
-  for Vim & gVim
 
 * [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter): Vim
   plugin for intensely orgasmic commenting
@@ -88,8 +82,6 @@ In my vim distribution the following Plugins are used:
 * [vim-ruby/vim-ruby](https://github.com/vim-ruby/vim-ruby): Vim/Ruby
   Configuration Files
 
-* [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized):
-  precision colorscheme for the vim text editor
 * [fatih/vim-go](https://github.com/fatih/vim-go): Go development plugin for
   Vim
 
@@ -98,4 +90,21 @@ In my vim distribution the following Plugins are used:
 
 * [rjohnsondev/vim-compiler-go](https://github.com/rjohnsondev/vim-compiler-go):
   Vim compiler plugin for Go (golang)
+
+# Bundled colorschemes
+
+* [toupeira/vim-desertink](https://github.com/toupeira/vim-desertink): A Vim
+  colorscheme based on desert.
+
+* [tomasr/molokai](https://github.com/tomasr/molokai): Molokai color scheme for
+  Vim
+
+* [sickill/vim-monokai](https://github.com/sickill/vim-monokai): Monokai color
+  scheme for Vim 
+
+* [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid): A dark color scheme
+  for Vim & gVim
+
+* [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized):
+  precision colorscheme for the vim text editor
 
