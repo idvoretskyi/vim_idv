@@ -32,5 +32,4 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'fatih/vim-go'
 Bundle 'vim-jp/vim-go-extra'
 Bundle 'rjohnsondev/vim-compiler-go'
-Bundle 'docker/docker'
 
