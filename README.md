@@ -33,39 +33,34 @@ In my vim distribution the following Plugins are used:
 * [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator):
   Seamless navigation between tmux panes and vim splits
 
-Bundle 'JarrodCTaylor/vim-shell-executor'
-Bundle 'andviro/flake8-vim'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
-Bundle 'chase/vim-ansible-yaml'
-Bundle 'scrooloose/nerdtree'
-Bundle 'klen/python-mode'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'vim-scripts/nginx.vim'
-Bundle 'toupeira/vim-desertink'
-Bundle 'tomasr/molokai'
-Bundle 'tpope/vim-eunuch'
-Bundle 'tpope/vim-fugitive'
-Bundle 'rosenfeld/conque-term'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'scrooloose/syntastic'
-Bundle 'majutsushi/tagbar'
-Bundle 'sickill/vim-monokai'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'bling/vim-airline'
-Bundle 'Conque-Shell'
-Bundle 'Xuyuanp/nerdtree-git-plugin'
-Bundle 'rodjek/vim-puppet'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'godlygeek/tabular'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'fatih/vim-go'
-Bundle 'vim-jp/vim-go-extra'
-Bundle 'rjohnsondev/vim-compiler-go'
+* [JarrodCTaylor/vim-shell-executor](https://github.com/JarrodCTaylor/vim-shell-executor):
+  Execute vim buffer in the shell and view output in split pane
 
+* [andviro/flake8-vim](https://github.com/nvie/vim-flake8): Flake8 plugin for
+  Vim
 
-
-
+* [scrooloose/nerdtree]
+* [klen/python-mode]
+* [davidhalter/jedi-vim]
+* [vim-scripts/nginx.vim]
+* [toupeira/vim-desertink]
+* [tomasr/molokai]
+* [tpope/vim-eunuch]
+* [tpope/vim-fugitive]
+* [rosenfeld/conque-term]
+* [jistr/vim-nerdtree-tabs]
+* [scrooloose/syntastic]
+* [majutsushi/tagbar]
+* [sickill/vim-monokai]
+* [w0ng/vim-hybrid]
+* [scrooloose/nerdcommenter]
+* [bling/vim-airline]
+* [Conque-Shell]
+* [Xuyuanp/nerdtree-git-plugin]
+* [rodjek/vim-puppet]
+* [vim-ruby/vim-ruby]
+* [godlygeek/tabular]
+* [altercation/vim-colors-solarized]
+* [fatih/vim-go]
+* [vim-jp/vim-go-extra]
+* [rjohnsondev/vim-compiler-go]
