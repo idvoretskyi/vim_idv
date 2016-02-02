@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VIMDIR="~/vim_idv"
+VIMDIR="$HOME/vim_idv"
 
 # Cloning the repo
 if [ -e "$VIMDIR" ]; then
@@ -11,8 +11,8 @@ else
 fi
 
 # Installing awesome VIM distribution
-if [ -e ~/.vim* ];then
-    rm -rf ~/.vim*
+if [ -e $HOME/.vim* ];then
+    rm -rf $HOME/.vim*
 fi
 
 ln -s $VIMDIR/vimrc ~/.vimrc && ln -s $VIMDIR/vim ~/.vim
