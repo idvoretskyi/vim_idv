@@ -17,7 +17,7 @@ fi
 
 ln -s $VIMDIR/vimrc $HOME/.vimrc && ln -s $VIMDIR/functions $HOME/.vim
 
-cd $VIMDIR
+cd $VIMDIR/vim
 git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
 vim +PluginInstall +qall
 
