@@ -15,9 +15,9 @@ if [ -e $HOME/.vim* ];then
     rm -rf $HOME/.vim*
 fi
 
-ln -s $VIMDIR/vimrc $HOME/.vimrc && ln -s $VIMDIR/vim $HOME/.vim
+ln -s $VIMDIR/vimrc $HOME/.vimrc && ln -s $VIMDIR/functions $HOME/.vim
 
-cd $VIMDIR/vim
+cd $VIMDIR
 git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
 vim +PluginInstall +qall
 
