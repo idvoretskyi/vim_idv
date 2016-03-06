@@ -9,7 +9,7 @@ map <C-f> :NERDTreeTabsToggle<CR>
 " bash on F5
 nnoremap <F5> :ConqueTermSplit bash<CR>
 " and ipython on <F6>
-nnoremap <F6> :exe "ConqueTermSplit ipython " . expand("%")<CR>
+nnoremap <F6> :exe "ConqueTermSplit python " . expand("%")<CR>
 let g:ConqueTerm_StartMessages = 0
 let g:ConqueTerm_CloseOnEnd = 0
 " check python code via PEP8 <leader>8
