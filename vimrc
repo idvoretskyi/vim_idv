@@ -61,7 +61,7 @@ set background=dark
 let g:solarized_termcolors=256
 let g:rehash256 = 1
 set t_Co=256
-colorscheme solarized
+colorscheme hybrid
 highlight Comment cterm=bold
 
 
