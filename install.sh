@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VIMDIR="$HOME/vim_idv"
+VIMDIR="$HOME/.vim_idv"
 
 # Cloning the repo
 if [ -e "$VIMDIR" ]; then
