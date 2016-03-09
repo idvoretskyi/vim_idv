@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VIMDIR=~/vim_idv
+VIMDIR=~/.vim_idv
 
 cd $VIMDIR && \
 git pull && \
