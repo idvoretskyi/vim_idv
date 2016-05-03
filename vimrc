@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 set number                    " add numbers to the beginning of the line
+set encoding=utf-8            " set encoding
 filetype off                  " required
 
 " source file to store keybindings

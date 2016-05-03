@@ -16,4 +16,4 @@ cd $HOME/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
 vim +PluginInstall +qall
 
-echo "VIM configuration installed successfully!"
+clear && echo "VIM configuration installed successfully!"
