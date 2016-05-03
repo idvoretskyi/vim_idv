@@ -7,13 +7,13 @@ map <C-f> :NERDTreeTabsToggle<CR>
 "
 " ConqueTerm
 " bash on F5
-nnoremap <F5> :ConqueTermSplit bash<CR>
+nnoremap <C-b> :ConqueTermSplit bash<CR>
 " and ipython on <F6>
-nnoremap <F6> :exe "ConqueTermSplit python " . expand("%")<CR>
+nnoremap <C-p> :exe "ConqueTermSplit python " . expand("%")<CR>
 let g:ConqueTerm_StartMessages = 0
 let g:ConqueTerm_CloseOnEnd = 0
 " check python code via PEP8 <leader>8
-"autocmd FileType python map <buffer> <leader>8 :PymodeLint<CR>
+autocmd FileType python map <buffer> <leader>8 :PymodeLint<CR>
 "
 " autocomplete <Ctrl+Space>
 inoremap <C-space> <C-x><C-o>

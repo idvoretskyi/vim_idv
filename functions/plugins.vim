@@ -22,7 +22,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'godlygeek/tabular'
 Bundle 'fatih/vim-go'
 Bundle 'vim-jp/vim-go-extra'
-Bundle 'rjohnsondev/vim-compiler-go'
+Plugin 'shougo/neocomplete.vim'
 " Colorschemes
 Bundle 'toupeira/vim-desertink'
 Bundle 'tomasr/molokai'
