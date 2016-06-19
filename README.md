@@ -13,11 +13,6 @@ To install it easily, please run:
 
 `curl -sS https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/install.sh | bash`
 
-## Updating existing installation
-
-Simply run the following command:
-
-`curl -sS https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/update.sh | bash`
 
 ## Plugin Management
 The full list of plugins one may find in `'~/.vim/plugins.vim'` file. To add any
