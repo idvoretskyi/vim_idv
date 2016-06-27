@@ -25,7 +25,7 @@ I have to simply run:
 
 Detailed information about Plugin installation one may find in [Vundle.vim](https://github.com/VundleVim/Vundle.vim) documentation.
 
-# Bundled plugins
+## Bundled plugins
 
 In my vim distribution the following Plugins are used:
 
@@ -91,7 +91,7 @@ In my vim distribution the following Plugins are used:
 * [rjohnsondev/vim-compiler-go](https://github.com/rjohnsondev/vim-compiler-go):
   Vim compiler plugin for Go (golang)
 
-# Bundled colorschemes
+## Bundled colorschemes
 
 * [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes):
   precision colorscheme for the vim text editor
