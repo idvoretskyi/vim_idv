@@ -1,3 +1,5 @@
+" Colorschemes
+Plugin 'flazz/vim-colorschemes'
 " Plugins 
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'JarrodCTaylor/vim-shell-executor'
@@ -23,10 +25,3 @@ Bundle 'godlygeek/tabular'
 Bundle 'fatih/vim-go'
 Bundle 'vim-jp/vim-go-extra'
 Plugin 'shougo/neocomplete.vim'
-" Colorschemes
-Bundle 'toupeira/vim-desertink'
-Bundle 'tomasr/molokai'
-Bundle 'sickill/vim-monokai'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'altercation/vim-colors-solarized'
-
