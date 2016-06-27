@@ -93,18 +93,6 @@ In my vim distribution the following Plugins are used:
 
 # Bundled colorschemes
 
-* [w0ng/vim-hybrid](https://github.com/w0ng/vim-hybrid): A dark color scheme
-  for Vim & gVim (default)
-
-* [toupeira/vim-desertink](https://github.com/toupeira/vim-desertink): A Vim
-  colorscheme based on desert.
-
-* [tomasr/molokai](https://github.com/tomasr/molokai): Molokai color scheme for
-  Vim
-
-* [sickill/vim-monokai](https://github.com/sickill/vim-monokai): Monokai color
-  scheme for Vim 
-
-* [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized):
+* [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes):
   precision colorscheme for the vim text editor
 
