@@ -85,8 +85,6 @@ In my vim distribution the following Plugins are used:
 * [fatih/vim-go](https://github.com/fatih/vim-go): Go development plugin for
   Vim
 
-* [vim-jp/vim-go-extra](https://github.com/vim-jp/vim-go-extra): Extra plugin
-  for golang
 
 * [rjohnsondev/vim-compiler-go](https://github.com/rjohnsondev/vim-compiler-go):
   Vim compiler plugin for Go (golang)
