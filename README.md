@@ -85,10 +85,6 @@ In my vim distribution the following Plugins are used:
 * [fatih/vim-go](https://github.com/fatih/vim-go): Go development plugin for
   Vim
 
-
-* [rjohnsondev/vim-compiler-go](https://github.com/rjohnsondev/vim-compiler-go):
-  Vim compiler plugin for Go (golang)
-
 ## Bundled colorschemes
 
 * [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes):
