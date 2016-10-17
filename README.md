@@ -88,7 +88,7 @@ In my vim distribution the following Plugins are used:
 
 ## Bundled colorschemes
 
-* [Plugin 'sickill/vim-monokai']
-* [Plugin 'tomasr/molokai']
-* [Plugin 'altercation/vim-colors-solarized']
-* [Plugin 'fugalh/desert.vim']
+* [sickill/vim-monokai](sickill/vim-monokai)
+* [tomasr/molokai](tomasr/molokai)
+* [altercation/vim-colors-solarized](altercation/vim-colors-solarized)
+* [fugalh/desert.vim](fugalh/desert.vim.git)
