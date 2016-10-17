@@ -1,5 +1,8 @@
 " Colorschemes
-Plugin 'flazz/vim-colorschemes'
+Plugin 'sickill/vim-monokai'
+Plugin 'tomasr/molokai'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'fugalh/desert.vim'
 " Plugins 
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'JarrodCTaylor/vim-shell-executor'
