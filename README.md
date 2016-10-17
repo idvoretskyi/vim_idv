@@ -88,6 +88,7 @@ In my vim distribution the following Plugins are used:
 
 ## Bundled colorschemes
 
-* [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes):
-  precision colorscheme for the vim text editor
-
+* [Plugin 'sickill/vim-monokai']
+* [Plugin 'tomasr/molokai']
+* [Plugin 'altercation/vim-colors-solarized']
+* [Plugin 'fugalh/desert.vim']
