@@ -84,11 +84,3 @@ In my vim distribution the following Plugins are used:
 
 * [fatih/vim-go](https://github.com/fatih/vim-go): Go development plugin for
   Vim
-
-
-## Bundled colorschemes
-
-* [sickill/vim-monokai](https://github.com/sickill/vim-monokai)
-* [tomasr/molokai](https://github.com/tomasr/molokai)
-* [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
-* [fugalh/desert.vim](https://github.com/fugalh/desert.vim.git)
