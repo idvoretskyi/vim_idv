@@ -4,7 +4,7 @@ An awesome vim configuration. My awesome.
 
 ## Sample
 
-![vim_idv screenshot](https://imgur.com/lNppPXB)
+![vim_idv screenshot](https://i.imgur.com/49eemuO.png)
 
 ## Installation
 
