@@ -26,7 +26,6 @@ Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 " Colorscheme
-set number
 syntax enable
 set background=dark
 colorscheme solarized
