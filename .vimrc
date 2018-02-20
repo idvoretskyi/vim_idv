@@ -21,6 +21,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'davidhalter/jedi-vim'
 Plug 'plasticboy/vim-markdown'
+Plug 'moorereason/vim-markdownfmt'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
