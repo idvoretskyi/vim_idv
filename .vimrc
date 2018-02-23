@@ -9,19 +9,22 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-markdown'
+Plug 'scrooloose/syntastic'
 Plug 'junegunn/seoul256.vim'
 Plug 'fatih/vim-go'
 Plug 'altercation/vim-colors-solarized'
-Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'klen/python-mode'
+Plug 'python-mode/python-mode'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'davidhalter/jedi-vim'
-Plug 'plasticboy/vim-markdown'
 Plug 'moorereason/vim-markdownfmt'
+Plug 'kien/ctrlp.vim'
+Plug 'valloric/youcompleteme'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
