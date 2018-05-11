@@ -23,7 +23,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'davidhalter/jedi-vim'
 Plug 'moorereason/vim-markdownfmt'
 Plug 'kien/ctrlp.vim'
-Plug 'valloric/youcompleteme'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " List ends here. Plugins become visible to Vim after this call.
