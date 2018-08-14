@@ -37,7 +37,7 @@ let g:solarized_termcolors=256
 " Python 3 syntax
 let g:pymode_python = 'python3'
 
-"========== PEP8 settings ============"
+" PEP* settings
 set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " a hard TAB displays as 4 columns
@@ -57,7 +57,7 @@ let g:PyFlakeAggressive = 3
 let g:PyFlakeRangeCommand = 'Q'
 let g:PyFlakeDefaultComplexity=10
 
-"====== NerdTree ==========="
+" NerdTree
 " to open a NERDTree automatically when vim starts up
 "autocmd vimenter * NERDTree "
 " to open a NERDTree automatically when vim starts up if no files were specified
@@ -69,7 +69,7 @@ let g:NERDTreeDirArrowCollapsible = "~"
 "Show hidden files
 let NERDTreeShowHidden=1
 "
-"====== vim-airline========="
+" vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -86,13 +86,6 @@ highlight Comment cterm=bold
 " Hotkeys
 " Nerdtree shortcut
 map <C-f> :NERDTreeTabsToggle<CR>
-" ConqueTerm
-" bash on F5
-nnoremap <C-b> :ConqueTermSplit bash<CR>
-" and ipython on <F6>
-nnoremap <C-p> :exe "ConqueTermSplit python " . expand("%")<CR>
-let g:ConqueTerm_StartMessages = 0
-let g:ConqueTerm_CloseOnEnd = 0
 " check python code via PEP8 <leader>8
 autocmd FileType python map <buffer> <leader>8 :PymodeLint<CR>
 "
