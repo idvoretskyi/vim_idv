@@ -17,6 +17,7 @@ This command will download the `.vimrc` file from this repo, and put it to
 the users' home directory.
 
 ## Plugin Management
+
 The full list of plugins you may find in the `~/.vimrc` file. To add any
 new plugin, simply add it to that file between the lines `call
 plug#begin('~/.vim/plugged')` and `call plug#end()`.
