@@ -24,6 +24,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'moorereason/vim-markdownfmt'
 Plug 'kien/ctrlp.vim'
 Plug 'fatih/vim-go'
+Plug 'nvie/vim-flake8'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -46,8 +47,9 @@ set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 
-autocmd BufWritePost *.py call Pyflakes()
-autocmd BufWritePost *.py call Pep8()
+"autocmd BufWritePost *.py call Pyflakes()
+"autocmd BufWritePost *.py call Pep8()
+autocmd BufWritePost *.py call Flake8()
 
 " Pyflakes
 let g:PyFlakeOnWrite = 0
