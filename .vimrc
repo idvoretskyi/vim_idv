@@ -25,6 +25,7 @@ Plug 'moorereason/vim-markdownfmt'
 Plug 'kien/ctrlp.vim'
 Plug 'fatih/vim-go'
 Plug 'nvie/vim-flake8'
+Plug 'sheerun/vim-polyglot'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
