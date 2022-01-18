@@ -10,7 +10,9 @@ An awesome vim configuration. My awesome.
 
 To install it easily, simply run:
 
-`wget -P $HOME https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/.vimrc`
+```shell
+	wget -P $HOME https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/.vimrc
+```
 
 This command will download the `.vimrc` file from this repo, and put it
 to the home directory of a current user.
