@@ -23,17 +23,19 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'davidhalter/jedi-vim'
 Plug 'moorereason/vim-markdownfmt'
 Plug 'kien/ctrlp.vim'
-Plug 'fatih/vim-go'
 Plug 'nvie/vim-flake8'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-" Colorscheme
+" Colorscheme settings
 syntax enable
 set background=dark
-colorscheme solarized
 let g:solarized_termcolors=256
+let g:rehash256 = 1
+set t_Co=256
+colorscheme solarized
+highlight Comment cterm=bold
 
 " Python 3 syntax
 let g:pymode_python = 'python3'
@@ -73,15 +75,6 @@ let NERDTreeShowHidden=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-
-" Colorscheme settings
-syntax enable
-set background=dark
-let g:solarized_termcolors=256
-let g:rehash256 = 1
-set t_Co=256
-colorscheme solarized
-highlight Comment cterm=bold
 
 " Hotkeys
 " Nerdtree shortcut
