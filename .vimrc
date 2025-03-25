@@ -37,6 +37,7 @@ Plug 'moorereason/vim-markdownfmt'
 Plug 'nvie/vim-flake8'
 Plug 'sheerun/vim-polyglot'
 Plug 'python-mode/python-mode'
+Plug 'github/copilot.vim'            " GitHub Copilot for AI-assisted development
 
 " Added helpful plugins
 Plug 'airblade/vim-gitgutter'        " Git diff in the gutter
