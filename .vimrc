@@ -41,7 +41,7 @@ Plug 'vim-airline/vim-airline'                          " Enhanced status line
 Plug 'vim-airline/vim-airline-themes'                   " Themes for airline
 Plug 'scrooloose/nerdtree'                             " File explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'                     " Git status in NERDTree
-Plug 'preservim/nerdtree-tabs'                         " NERDTree with tabs
+Plug 'jistr/vim-nerdtree-tabs'                         " NERDTree with tabs
 Plug 'majutsushi/tagbar'                               " Code structure browser
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }   " Fuzzy finder
 Plug 'junegunn/fzf.vim'                                " FZF integration
