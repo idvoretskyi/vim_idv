@@ -191,13 +191,14 @@ setup_vim_directories() {
 
 # Install vim plugins
 install_vim_plugins() {
-    status "Installing vim plugins (this may take a moment)..."
+    status "Installing vim plugins (this may take a minute)..."
     
     # Run vim in batch mode to install plugins
-    if vim +PlugInstall +qall; then
+    if vim +PlugInstall +qall 2>/dev/null; then
         info "Vim plugins installed successfully"
     else
-        warning "Some plugins may not have installed correctly"
+        warning "Plugin installation completed with warnings"
+        info "You can reinstall plugins later with :PlugInstall in vim"
     fi
 }
 

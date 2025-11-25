@@ -161,10 +161,10 @@ main() {
     # Success message
     echo
     echo -e "${GREEN}================================================${NC}"
-    echo -e "${GREEN}  Setup Complete! 🎉${NC}"
+    echo -e "${GREEN}  Setup Complete!${NC}"
     echo -e "${GREEN}================================================${NC}"
-    info "Your vim configuration has been installed successfully!"
-    info "You can now start vim and enjoy your enhanced development environment."
+    info "Vim configuration installed successfully!"
+    info "Start vim to begin using your enhanced development environment."
     echo
 }
 
