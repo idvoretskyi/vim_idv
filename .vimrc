@@ -39,10 +39,10 @@ Plug 'nvie/vim-flake8'              " Python PEP8 checker
 " =============================================================================
 Plug 'vim-airline/vim-airline'                          " Enhanced status line
 Plug 'vim-airline/vim-airline-themes'                   " Themes for airline
-Plug 'scrooloose/nerdtree'                             " File explorer
-Plug 'Xuyuanp/nerdtree-git-plugin'                     " Git status in NERDTree
-Plug 'jistr/vim-nerdtree-tabs'                         " NERDTree with tabs
-Plug 'majutsushi/tagbar'                               " Code structure browser
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeTabsToggle', 'NERDTree'] }  " File explorer (lazy)
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': ['NERDTreeToggle', 'NERDTreeTabsToggle'] }  " Git status in NERDTree (lazy)
+Plug 'jistr/vim-nerdtree-tabs', { 'on': 'NERDTreeTabsToggle' }  " NERDTree with tabs (lazy)
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }     " Code structure browser (lazy)
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }   " Fuzzy finder
 Plug 'junegunn/fzf.vim'                                " FZF integration
 
@@ -52,13 +52,13 @@ Plug 'junegunn/fzf.vim'                                " FZF integration
 Plug 'scrooloose/nerdcommenter'     " Easy commenting
 Plug 'jiangmiao/auto-pairs'         " Auto-close brackets and quotes
 Plug 'sheerun/vim-polyglot'         " Language pack collection
-Plug 'github/copilot.vim'           " AI-powered code assistance
+Plug 'github/copilot.vim', { 'on': [] }  " AI-powered code assistance (manual load)
 
 " =============================================================================
 " Python Development
 " =============================================================================
-Plug 'davidhalter/jedi-vim'         " Python autocompletion and navigation
-Plug 'python-mode/python-mode'     " Comprehensive Python IDE features
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }  " Python autocompletion (lazy)
+Plug 'python-mode/python-mode', { 'for': 'python' }  " Python IDE features (lazy)
 
 " =============================================================================
 " Git Integration
@@ -68,7 +68,7 @@ Plug 'airblade/vim-gitgutter'       " Git diff indicators in gutter
 " =============================================================================
 " Markdown & Documentation
 " =============================================================================
-Plug 'moorereason/vim-markdownfmt'  " Markdown formatting
+Plug 'moorereason/vim-markdownfmt', { 'for': 'markdown' }  " Markdown formatting (lazy)
 
 " =============================================================================
 " Color Schemes
@@ -151,8 +151,8 @@ augroup python_settings
     autocmd FileType python setlocal autoindent        " Auto-indent new lines
     autocmd FileType python setlocal smartindent       " Smart indentation
     
-    " Auto-run flake8 on save
-    autocmd BufWritePost *.py call Flake8()
+        " Auto-run flake8 on save - disabled for performance, use <leader>8 manually
+    " autocmd BufWritePost *.py call Flake8()
 augroup END
 
 " Flake8 configuration
@@ -170,12 +170,10 @@ let g:PyFlakeRangeCommand = 'Q'        " Range checking command
 " NERDTree File Explorer Configuration
 " =============================================================================
 
-" Auto-open NERDTree when vim starts with no files
+" NERDTree autocommands - minimal for performance
 augroup nerdtree_settings
     autocmd!
-    autocmd StdinReadPre * let s:std_in=1
-    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-    
+    " Auto-open disabled for faster startup - use <C-f> to open manually
     " Close vim if NERDTree is the only window left
     autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 augroup END
@@ -213,10 +211,10 @@ let g:gitgutter_enabled = 1                       " Enable git gutter
 let g:gitgutter_map_keys = 0                      " Disable default mappings
 let g:gitgutter_highlight_linenrs = 1             " Highlight line numbers
 
-" Syntastic Configuration
+" Syntastic Configuration - optimized for performance
 let g:syntastic_always_populate_loc_list = 1      " Populate location list
-let g:syntastic_auto_loc_list = 1                 " Auto open/close location list
-let g:syntastic_check_on_open = 1                 " Check on file open
+let g:syntastic_auto_loc_list = 0                 " Don't auto open location list
+let g:syntastic_check_on_open = 0                 " Don't check on file open (performance)
 let g:syntastic_check_on_wq = 0                   " Don't check on :wq
 
 " Auto-pairs Configuration

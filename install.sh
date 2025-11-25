@@ -74,15 +74,14 @@ main() {
     install_vim_plugins
     
     print_section "Installation Complete"
-    info "You can now start vim and enjoy your new configuration."
-    info "If you encounter any issues, check the README.md file for troubleshooting tips."
-    
-    # Optional: show configuration summary
-    if [[ "${VERBOSE:-}" == "1" ]]; then
-        info "Configuration installed at: ${HOME}/.vimrc"
-        info "Plugins directory: ${HOME}/.vim/plugged"
-        info "Data directories: ${HOME}/.vim/{backup,swap,undo}"
-    fi
+    info "Vim configuration installed successfully!"
+    info "Start vim to begin using your new configuration."
+    info "Tips:"
+    echo "  - Use <C-f> to open file explorer"
+    echo "  - Use ,f to fuzzy find files"
+    echo "  - Run :Copilot setup to enable AI assistance"
+    echo ""
+    info "For troubleshooting, see README.md"
 }
 
 # =============================================================================

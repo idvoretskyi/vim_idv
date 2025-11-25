@@ -2,7 +2,7 @@
 
 A comprehensive and well-organized Vim configuration optimized for Python development, DevOps workflows, and general productivity. This setup includes carefully selected plugins, sensible defaults, and productive key mappings.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### One-line Installation (Recommended)
 
@@ -20,7 +20,7 @@ cd vim_idv
 ./install.sh
 ```
 
-## 📋 Requirements
+## Requirements
 
 - **Vim 8.0+** or **Neovim 0.4+**
 - **Git** (for plugin management and repository cloning)
@@ -32,7 +32,7 @@ Optional but recommended:
 - **ripgrep** for faster text searching
 - **Powerline fonts** for better status line appearance
 
-## 🎯 Features
+## Features
 
 ### Core Functionality
 - **Modern Plugin Management**: Powered by vim-plug with auto-installation
@@ -41,17 +41,18 @@ Optional but recommended:
 - **File Navigation**: Enhanced file explorer and fuzzy finding
 - **Code Quality**: Automatic linting and syntax checking
 - **AI Assistance**: GitHub Copilot integration for intelligent code completion
+- **Performance Optimized**: Fast startup with lazy loading of plugins
 
 ### Key Highlights
-- 🔍 **Fuzzy Finding**: Fast file and content search with FZF
-- 🌳 **File Explorer**: Enhanced NERDTree with git status integration
-- ✨ **Status Line**: Beautiful and informative airline status bar
-- 🐍 **Python IDE**: Complete Python development environment
-- 📝 **Code Quality**: Automatic PEP8 compliance and linting
-- 🎨 **Themes**: Beautiful Solarized color scheme
-- ⌨️ **Productivity**: Extensive key mappings for common tasks
+- Fuzzy Finding: Fast file and content search with FZF
+- File Explorer: Enhanced NERDTree with git status integration
+- Status Line: Beautiful and informative airline status bar
+- Python IDE: Complete Python development environment
+- Code Quality: Automatic PEP8 compliance and linting
+- Themes: Beautiful Solarized color scheme
+- Productivity: Extensive key mappings for common tasks
 
-## 📦 Included Plugins
+## Included Plugins
 
 ### Core Plugins
 | Plugin | Description |
@@ -83,7 +84,7 @@ Optional but recommended:
 | [auto-pairs](https://github.com/jiangmiao/auto-pairs) | Auto-close brackets |
 | [copilot.vim](https://github.com/github/copilot.vim) | AI code assistance |
 
-## ⌨️ Key Mappings
+## Key Mappings
 
 ### File Navigation
 | Key | Action |
@@ -113,8 +114,10 @@ Optional but recommended:
 | Key | Action |
 |-----|--------|
 | `,r` | Run Python file |
-| `,8` | Lint Python file |
+| `,8` | Lint Python file (Flake8) |
 | `,d` | Show documentation |
+
+Note: Python plugins load automatically when editing .py files.
 
 ### General Editing
 | Key | Action |
@@ -125,7 +128,7 @@ Optional but recommended:
 | `,ev` | Edit vimrc |
 | `,sv` | Reload vimrc |
 
-## 🐍 Python Development Features
+## Python Development Features
 
 This configuration is optimized for Python development with:
 
@@ -136,7 +139,7 @@ This configuration is optimized for Python development with:
 - **Documentation**: Inline documentation display
 - **Testing**: Easy test running and debugging
 
-## 🛠️ Customization
+## Customization
 
 ### Environment Variables
 - `DEBUG=1`: Enable debug mode for installation scripts
@@ -150,7 +153,7 @@ This configuration is optimized for Python development with:
   - `swap/`: Swap files  
   - `undo/`: Undo history
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 vim_idv/
@@ -162,7 +165,15 @@ vim_idv/
 └── README.md              # This documentation
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
+
+### Performance Notes
+
+This configuration is optimized for fast startup:
+- Plugins are lazy-loaded when needed
+- NERDTree doesn't auto-open on startup (use `<C-f>` to open)
+- Syntax checking runs on demand rather than automatically
+- GitHub Copilot loads manually (run `:Copilot setup` when needed)
 
 ### Common Issues
 
@@ -201,7 +212,7 @@ rm -rf ~/.vim/plugged
 ./install.sh
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit issues or pull requests.
 
@@ -217,11 +228,11 @@ cd vim_idv
 # Submit a pull request
 ```
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 📞 Support
+## Support
 
 - **Issues**: [GitHub Issues](https://github.com/idvoretskyi/vim_idv/issues)
 - **Documentation**: This README and inline code comments
@@ -229,4 +240,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-**Happy Vimming!** 🎉
+**Happy Vimming!**
