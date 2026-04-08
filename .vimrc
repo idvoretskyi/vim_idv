@@ -61,6 +61,11 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }  " Python autocompletion (lazy)
 Plug 'python-mode/python-mode', { 'for': 'python' }  " Python IDE features (lazy)
 
 " =============================================================================
+" Go Development
+" =============================================================================
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }  " Go development tools
+
+" =============================================================================
 " Git Integration
 " =============================================================================
 Plug 'airblade/vim-gitgutter'       " Git diff indicators in gutter
@@ -167,6 +172,39 @@ let g:PyFlakeAggressive = 3            " Aggressiveness level
 let g:PyFlakeRangeCommand = 'Q'        " Range checking command
 
 " =============================================================================
+" Go Development Configuration
+" =============================================================================
+
+" vim-go settings
+let g:go_fmt_command = "goimports"           " Use goimports for formatting (includes gofmt)
+let g:go_fmt_autosave = 1                    " Auto-format on save
+let g:go_def_mode = 'gopls'                  " Use gopls for definitions
+let g:go_info_mode = 'gopls'                 " Use gopls for info
+let g:go_metalinter_autosave = 0             " Disable metalinter on save (performance)
+let g:go_list_type = "quickfix"              " Use quickfix for errors
+
+" Syntax highlighting
+let g:go_highlight_functions = 1             " Highlight functions
+let g:go_highlight_methods = 1               " Highlight methods
+let g:go_highlight_structs = 1               " Highlight structs
+let g:go_highlight_operators = 1             " Highlight operators
+let g:go_highlight_build_constraints = 1     " Highlight build constraints
+let g:go_highlight_extra_types = 1           " Highlight extra types
+let g:go_highlight_fields = 1                " Highlight struct fields
+let g:go_highlight_types = 1                 " Highlight types
+let g:go_highlight_variable_declarations = 1 " Highlight variable declarations
+let g:go_highlight_variable_assignments = 1  " Highlight variable assignments
+
+" Go-specific indentation and formatting
+augroup go_settings
+    autocmd!
+    autocmd FileType go setlocal tabstop=4       " Tab display width
+    autocmd FileType go setlocal shiftwidth=4    " Indentation width
+    autocmd FileType go setlocal noexpandtab     " Use tabs (Go convention)
+    autocmd FileType go setlocal autoindent      " Auto-indent new lines
+augroup END
+
+" =============================================================================
 " NERDTree File Explorer Configuration
 " =============================================================================
 
@@ -187,7 +225,7 @@ let g:NERDTreeShowLineNumbers = 0         " Hide line numbers
 let g:NERDTreeWinSize = 30               " Window width
 
 " NERDTree file filters
-let g:NERDTreeIgnore = ['\.pyc$', '\.pyo$', '__pycache__', '.git', '.DS_Store']
+let g:NERDTreeIgnore = ['\.pyc$', '\.pyo$', '__pycache__', '.git', '.DS_Store', '\.o$', '\.a$', '\.so$', '\.exe$']
 
 " =============================================================================
 " Plugin Configuration - Settings for installed plugins
@@ -272,12 +310,27 @@ augroup python_mappings
     autocmd FileType python nnoremap <buffer> <leader>d :PymodeDoc<CR>   " Show documentation
 augroup END
 
+" Go development shortcuts
+augroup go_mappings
+    autocmd!
+    autocmd FileType go nnoremap <buffer> <leader>r :GoRun<CR>           " Run Go file
+    autocmd FileType go nnoremap <buffer> <leader>b :GoBuild<CR>         " Build Go project
+    autocmd FileType go nnoremap <buffer> <leader>t :GoTest<CR>          " Run tests
+    autocmd FileType go nnoremap <buffer> <leader>c :GoCoverageToggle<CR> " Toggle coverage
+    autocmd FileType go nnoremap <buffer> <leader>d :GoDoc<CR>           " Show documentation
+    autocmd FileType go nnoremap <buffer> <leader>i :GoInfo<CR>          " Show type info
+    autocmd FileType go nnoremap <buffer> <leader>l :GoMetaLinter<CR>    " Run linter
+    autocmd FileType go nnoremap <buffer> gd :GoDef<CR>                  " Go to definition
+    autocmd FileType go nnoremap <buffer> gr :GoReferrers<CR>            " Show references
+augroup END
+
 " Syntax highlighting shortcuts
 nnoremap <leader>th :set ft=htmljinja<CR>        " HTML Jinja syntax
 nnoremap <leader>tp :set ft=python<CR>           " Python syntax
 nnoremap <leader>tj :set ft=javascript<CR>       " JavaScript syntax
 nnoremap <leader>tc :set ft=css<CR>              " CSS syntax
 nnoremap <leader>td :set ft=django<CR>           " Django syntax
+nnoremap <leader>tg :set ft=go<CR>               " Go syntax
 
 " =============================================================================
 " Git and Version Control

@@ -60,21 +60,27 @@ readonly REPO_NAME="vim_idv"
 # Setup Functions
 # =============================================================================
 
+# Check if a command exists
+command_exists() {
+    local cmd="$1"
+    command -v "${cmd}" >/dev/null 2>&1
+}
+
 # Check system requirements
 check_system_requirements() {
     local requirements=("git" "vim" "curl")
     local missing=()
-    
+
     for req in "${requirements[@]}"; do
-        if ! command -v "${req}" &> /dev/null; then
+        if ! command_exists "${req}"; then
             missing+=("${req}")
         fi
     done
-    
+
     if [[ ${#missing[@]} -gt 0 ]]; then
         error "Missing required dependencies: ${missing[*]}\nPlease install them and run this script again."
     fi
-    
+
     info "System requirements check passed"
 }
 
@@ -97,7 +103,7 @@ clone_repository() {
     
     status "Cloning repository from ${REPO_URL}..."
     
-    if git clone "${REPO_URL}" "${target_dir}"; then
+    if git clone --depth 1 "${REPO_URL}" "${target_dir}"; then
         info "Repository cloned successfully"
         echo "${target_dir}"
     else
@@ -109,18 +115,15 @@ clone_repository() {
 run_installation() {
     local repo_dir="$1"
     local install_script="${repo_dir}/install.sh"
-    
+
     if [[ ! -f "${install_script}" ]]; then
         error "Installation script not found: ${install_script}"
     fi
-    
-    # Make script executable
-    chmod +x "${install_script}" || error "Failed to make install script executable"
-    
+
     status "Starting installation process..."
-    
-    # Change to repository directory and run install script
-    if (cd "${repo_dir}" && ./install.sh); then
+
+    # Run with bash explicitly to avoid relying on executable bit.
+    if bash "${install_script}"; then
         info "Installation completed successfully"
     else
         error "Installation failed"
@@ -130,10 +133,10 @@ run_installation() {
 # Cleanup temporary files
 cleanup_installation() {
     local temp_dir="$1"
-    
+
     if [[ -n "${temp_dir}" && -d "${temp_dir}" ]]; then
         status "Cleaning up temporary files..."
-        rm -rf "${temp_dir}"
+        rm -rf -- "${temp_dir}"
     fi
 }
 

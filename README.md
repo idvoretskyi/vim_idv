@@ -11,6 +11,11 @@ Install everything with a single command:
 curl -sL https://raw.githubusercontent.com/idvoretskyi/vim_idv/master/setup.sh | bash
 ```
 
+What this does:
+- Validates required tools (`git`, `vim`, and `curl`)
+- Clones the repository with shallow history for faster setup
+- Runs the local installer and cleans temporary files automatically
+
 ### Local Installation
 
 If you've already cloned the repository:
@@ -23,7 +28,7 @@ cd vim_idv
 ## Requirements
 
 - **Vim 8.0+** or **Neovim 0.4+**
-- **Git** (for plugin management and repository cloning)
+- **Git** (required for plugin management and repository cloning)
 - **curl** (for downloading components)
 - **Python 3** (for Python development features)
 

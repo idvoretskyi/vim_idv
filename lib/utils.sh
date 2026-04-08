@@ -57,7 +57,9 @@ debug() {
 print_section() {
     local title="$1"
     local length=${#title}
-    local border=$(printf '=%.0s' $(seq 1 $((length + 8))))
+    local border
+    printf -v border '%*s' "$((length + 8))" ''
+    border=${border// /=}
     
     echo
     echo -e "${GREEN}${border}${NC}"
@@ -210,10 +212,10 @@ prompt_choice() {
     
     while true; do
         if [[ -n "${default}" ]]; then
-            read -p "${prompt} [${default}]: " choice
+            read -r -p "${prompt} [${default}]: " choice
             choice="${choice:-${default}}"
         else
-            read -p "${prompt}: " choice
+            read -r -p "${prompt}: " choice
         fi
         
         if [[ "${choices}" == *"${choice}"* ]]; then

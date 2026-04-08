@@ -22,15 +22,13 @@ init_script "Installation Script"
 # =============================================================================
 
 # Check system requirements
-check_requirements curl vim
+check_requirements curl git vim
 
 # Backup existing configuration
 backup_existing_config() {
     local vimrc_path="${HOME}/.vimrc"
-    
-    if [[ -f "${vimrc_path}" ]]; then
-        backup_file "${vimrc_path}"
-    fi
+
+    backup_file "${vimrc_path}"
 }
 
 # Install vimrc configuration
