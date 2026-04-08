@@ -1,5 +1,7 @@
 # IDV's Vim Configuration
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A comprehensive and well-organized Vim configuration optimized for Python development, DevOps workflows, and general productivity. This setup includes carefully selected plugins, sensible defaults, and productive key mappings.
 
 ## Quick Start
@@ -236,6 +238,7 @@ cd vim_idv
 ## License
 
 This project is open source and available under the MIT License.
+See [LICENSE](LICENSE) for details.
 
 ## Support
 
